@@ -1,0 +1,5 @@
+[user]
+	name = Nico Haenggi
+	email = nico@haenggi.ch
+[credential]
+	helper = osxkeychain
