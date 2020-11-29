@@ -32,14 +32,12 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # Update Zsh settings [3/3]
 printf "⚙️ Update Zsh settings...\n"
 sudo rm -rf ~/.zshrc > /dev/null 2>&1
-cp $CONFIG/.zshrc ~/.zshrc
+ln -s $CONFIG/.zshrc ~/.zshrc
 
-# Update Git settings [1/1]
-printf "⚙️ Update Git settings...\n"
+# Linking dotfiles [2/2]
+printf "⚙️ Linking dotfiles...\n"
 sudo rm -rf ~/.gitconfig > /dev/null 2>&1
-sudo rm -rf ~/.gitignore > /dev/null 2>&1
-cp $CONFIG/.gitignore ~/.gitignore
-cp $CONFIG/.gitconfig ~/.gitconfig
+ln -s $CONFIG/.gitconfig ~/.gitconfig
 
 # Configure macOS Finder
 printf "⚙️ Configure Finder...\n"
