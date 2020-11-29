@@ -5,6 +5,7 @@ tap "homebrew/cask-drivers"
 # brew tools
 brew "git"
 brew "svn"
+brew "nvm"
 brew "tldr"
 brew "tree"
 brew "wget"
