@@ -11,6 +11,7 @@ brew "wget"
 
 # brew apps
 cask "1password"
+cask "1password-cli"
 cask "balenaetcher"
 cask "charles"
 cask "discord"
