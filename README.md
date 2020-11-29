@@ -24,7 +24,6 @@ __dotfiles__ is a simple script that can be used after a clean installation of m
 - [Getting Started](#getting-started)
 - [Requirements](#requirements)
 - [Setup](#setup)
-- [Useful links](#useful-links)
 - [Credits](#credits)
 
 ## Getting Started
@@ -47,14 +46,6 @@ You need an active internet connection and one of the following macOS version al
 4. `Update`: update brews, casks and MAS applications and formulaes
 
 For a step-by-step guide click [__here__](https://github.com/nicohaenggi/dotfiles/blob/master/doc/SETUP.md).
-
-## Useful links
-
-Click [__here__](https://github.com/MarioCatuogno/Clean-macOS/blob/master/doc/APPLIST.md) to find a collection of various apps I've personally tested or used in the past on macOS.
-
-Click [__here__](https://github.com/MarioCatuogno/Clean-macOS/blob/master/doc/CHANGELOG.md) to find the full changelog history.
-
-Click [__here__](https://github.com/MarioCatuogno/Clean-macOS/projects/8) to find the current status and the upcoming milestones of the Clean-macOS project.
 
 ## Credits
 
