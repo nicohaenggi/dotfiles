@@ -40,12 +40,13 @@ You need an active internet connection and one of the following macOS version al
 
 ## Setup
 
-1. Open __Terminal.app__ and run the command `chmod -R 777 ~/dotfiles && ~/dotfiles/install.sh`, a prompt will appear from which you can choose one of the four options (install, configure, update or exit).
-2. `Install`: install Homebrew package, binaries, casks, dependencies and Mac Apple Store application listed in `Brewfile` file
-3. `Configure`: configure macOS with useful commands and update `zsh`
-4. `Update`: update brews, casks and MAS applications and formulaes
+Open __Terminal.app__ and run the command `chmod -R 777 ~/dotfiles && ~/dotfiles/install.sh`, a prompt will appear from which you can choose one of the three options:
+1. `Install`: install Homebrew package, binaries, casks, dependencies and Mac Apple Store application listed in `Brewfile` file
+2. `Configure`: configure macOS with useful commands and update `zsh`
+3. `Update`: update brews, casks and MAS applications and formulaes
 
-For a step-by-step guide click [__here__](https://github.com/nicohaenggi/dotfiles/blob/master/doc/SETUP.md).
+Finally, restart macOS.
+
 
 ## Credits
 
