@@ -9,6 +9,9 @@ brew "nvm"
 brew "tldr"
 brew "tree"
 brew "wget"
+brew "nvm"
+brew "yarn"
+brew "jq"
 
 # brew apps
 cask "1password"
