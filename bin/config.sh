@@ -20,24 +20,38 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Install Oh-My-Zsh [1/3]
-printf "📦 Install Zsh...\n"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+if [ ! -f ~/.oh-my-zsh/oh-my-zsh.sh ]; then
+  printf "📦 Install Zsh...\n"  
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi
 
 # Install Zsh plugins [2/3]
-printf "📦 Install Zsh plugins...\n"
-git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+install_zsh_plugin() {
+  if [ ! -d ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/$1 ]; then
+    printf "📦 Install Zsh plugin '$1'...\n"
+    git clone $2 ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/$1
+  fi
+}
+install_zsh_plugin zsh-completions https://github.com/zsh-users/zsh-completions
+install_zsh_plugin zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting.git
+install_zsh_plugin zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions
 
 # Update Zsh settings [3/3]
 printf "⚙️ Update Zsh settings...\n"
 sudo rm -rf ~/.zshrc > /dev/null 2>&1
 ln -s $CONFIG/.zshrc ~/.zshrc
 
-# Linking dotfiles [2/2]
+# Linking dotfiles [1/1]
 printf "⚙️ Linking dotfiles...\n"
 sudo rm -rf ~/.gitconfig > /dev/null 2>&1
 ln -s $CONFIG/.gitconfig ~/.gitconfig
+
+# Configuring NVM [1/2]
+printf "⚙️ Configure NVM...\n"
+mkdir -p ~/.nvm
+
+# Install Node [2/2]
+source $BIN/node.sh
 
 # Configure macOS Finder
 printf "⚙️ Configure Finder...\n"
@@ -89,7 +103,7 @@ fi
 
 # Cleanup
 printf "⚙️ Cleanup and final touches...\n"
-brew -v update && brew -v upgrade && brew cask upgrade && mas upgrade && brew -v cleanup --prune=2 && brew doctor
+brew -v update && brew -v upgrade && brew upgrade --cask && mas upgrade && brew -v cleanup --prune=2 && brew doctor
 
 # Exit script
 exit

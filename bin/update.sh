@@ -19,6 +19,9 @@ sudo -v
 # Keep alive Root
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# Update Node [1/1]
+source $BIN/node.sh
+
 # Cleanup
 printf "⚙️ Updating Brew ...\n"
 brew -v update && brew -v upgrade && mas upgrade && brew -v cleanup --prune=2 && brew doctor && brew -v upgrade --casks --greedy 
