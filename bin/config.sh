@@ -69,6 +69,20 @@ defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
 defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool false
 
+# Configure Dock
+printf "⚙️ Configure Safari...\n"
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock tilesize -int 50
+defaults write com.apple.dock autohide-time-modifier -float 0.1
+defaults write com.apple.dock autohide-delay -float 0.1
+defaults write com.apple.dock largesize -int 65
+defaults write com.apple.dock magnification -bool true
+
+# Configure Hostname
+sudo scutil --set ComputerName "the-xx-macbook"
+sudo scutil --set LocalHostName "the-xx-macbook"
+sudo scutil --set HostName "the-xx-macbook"
+
 # Configure macOS Safari
 printf "⚙️ Configure Safari...\n"
 defaults write com.apple.Safari WebAutomaticSpellingCorrectionEnabled -bool false

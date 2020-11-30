@@ -12,6 +12,7 @@ brew "wget"
 brew "nvm"
 brew "yarn"
 brew "jq"
+brew "fswatch"
 
 # brew apps
 cask "1password"
