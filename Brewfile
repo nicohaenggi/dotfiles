@@ -39,6 +39,8 @@ cask "cheatsheet"
 cask "iina"
 cask "transmission"
 cask "sonos"
+cask "raindropio"
+cask "timemator"
 
 # fonts
 cask "font-fantasque-sans-mono"

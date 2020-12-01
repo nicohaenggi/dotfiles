@@ -60,8 +60,10 @@ alias path='echo -e ${PATH//:/\\n}'
 alias reload="exec ${SHELL} -l"
 
 # Shortcuts
-alias ping="prettyping --nolegend"
 alias myip="ipconfig getifaddr en0"
+
+alias dotfiles_open="code ~/dotfiles"
+alias dotfiles="~/dotfiles/install.sh"
 
 # Brew
 alias bup="brew -v update && brew -v upgrade && mas upgrade && brew -v cleanup --prune=2 && brew doctor && brew -v upgrade --casks --greedy"
