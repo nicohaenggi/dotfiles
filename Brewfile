@@ -41,6 +41,7 @@ cask "transmission"
 cask "sonos"
 cask "raindropio"
 cask "timemator"
+cask "microsoft-teams"
 
 # fonts
 cask "font-fantasque-sans-mono"
@@ -55,3 +56,4 @@ mas "GoodNotes 5", id: 1444383602
 mas "Xcode", id: 497799835
 mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
+mas "Raindrop.io for Safari", id: 957810159
