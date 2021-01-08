@@ -42,6 +42,7 @@ cask "sonos"
 cask "raindropio"
 cask "timemator"
 cask "microsoft-teams"
+cask "hex-fiend"
 
 # fonts
 cask "font-fantasque-sans-mono"
@@ -57,3 +58,6 @@ mas "Xcode", id: 497799835
 mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
 mas "Raindrop.io for Safari", id: 957810159
+mas "Pages", id: 409201541
+mas "Numbers", id: 409203825
+mas "Keynote", id: 409183694
