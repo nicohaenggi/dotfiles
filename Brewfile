@@ -51,6 +51,8 @@ cask "font-hack"
 cask "font-lato"
 cask "font-roboto"
 cask "font-montserrat"
+cask "font-poppins"
+cask "font-open-sans"
 
 # app store apps
 mas "GoodNotes 5", id: 1444383602
