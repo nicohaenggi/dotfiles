@@ -43,6 +43,7 @@ cask "raindropio"
 cask "timemator"
 cask "microsoft-teams"
 cask "hex-fiend"
+cask "adoptopenjdk"
 
 # fonts
 cask "font-fantasque-sans-mono"
