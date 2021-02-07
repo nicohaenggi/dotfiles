@@ -8,4 +8,5 @@ nvm alias default 'lts/*'
 printf "📦 Install packages...\n" 
 npm i -g http-server
 npm i -g npm-check
+npm i -g npm
 npm update -g
