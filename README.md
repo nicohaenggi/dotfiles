@@ -46,7 +46,7 @@ Open __Terminal.app__ and run the command `chmod -R 777 ~/dotfiles && ~/dotfiles
 3. `secrets`: synchronizes the secrets stored in 1Password (e.g. SSH keys)
 4. `update`: update brews, casks and MAS applications and formulaes
 
-Finally, restart macOS.
+Now, head over to the [manual installation steps](https://github.com/nicohaenggi/dotfiles/blob/main/MANUAL_STEPS.md) to complete the installation. Finally, restart macOS.
 
 
 ## Credits
