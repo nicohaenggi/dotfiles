@@ -44,6 +44,7 @@ cask "timemator"
 cask "microsoft-teams"
 cask "hex-fiend"
 cask "adoptopenjdk"
+cask "robo-3t"
 
 # fonts
 cask "font-fantasque-sans-mono"
