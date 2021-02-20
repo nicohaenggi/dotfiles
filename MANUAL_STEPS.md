@@ -37,6 +37,7 @@ The following additional setup steps are needed:
 - [Visual Studio Code](https://code.visualstudio.com/): turn on *Settings Sync*
 - [Sketch](https://www.sketch.com/): install using `.dmg`
 - [Transmit](https://panic.com/transmit/): install using `.dmg`
+- [Docker](https://docker.com): enable `Kubernetes` in the `Preferences`
 
 These applications were previously used but deemed unnecessary:
 
