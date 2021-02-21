@@ -61,9 +61,9 @@ alias reload="exec ${SHELL} -l"
 
 # Shortcuts
 alias myip="ipconfig getifaddr en0"
-
 alias dotfiles_open="code ~/dotfiles"
 alias dotfiles="~/dotfiles/install.sh"
+alias k="kubectl"
 
 # Brew
 alias bup="brew -v update && brew -v upgrade && mas upgrade && brew -v cleanup --prune=2 && brew doctor && brew -v upgrade --casks --greedy"
