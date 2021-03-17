@@ -13,6 +13,7 @@ brew "nvm"
 brew "yarn"
 brew "jq"
 brew "fswatch"
+brew "skaffold"
 
 # brew apps
 cask "1password"
@@ -45,6 +46,9 @@ cask "microsoft-teams"
 cask "hex-fiend"
 cask "adoptopenjdk"
 cask "robo-3t"
+cask "garmin-express"
+cask "android-platform-tools"
+cask "tableplus"
 
 # fonts
 cask "font-fantasque-sans-mono"
@@ -61,7 +65,6 @@ mas "GoodNotes 5", id: 1444383602
 mas "Xcode", id: 497799835
 mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
-mas "Raindrop.io for Safari", id: 957810159
 mas "Pages", id: 409201541
 mas "Numbers", id: 409203825
 mas "Keynote", id: 409183694
