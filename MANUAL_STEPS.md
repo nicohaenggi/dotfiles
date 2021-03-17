@@ -24,7 +24,18 @@ Do a fresh install of macOS (version 11.00+) and after your first access to macO
 4. Go to __Dock & Menu Bar > Control Centre > Spotlight__ Disable "Show in Menu Bar"
 5. Go to __Touch ID__ Enable "iTunes Store, App Store & Apple Books"
 6. Go to __Safari > Preferences > Extensions__ Enable *1Password*
-7. Restart macOS
+7. Go to __General > Default web browser__ and change it to *Google Chrome*
+8. Go to __Dock & Menu Bar__ and change the following:
+  - __Dock__: Enable *Magnification* and *Automatically hide and show the Dock*; Disable *Show recent applications in Dock*
+  - __Bluetooth__: Enable *Show in Menu Bar*
+9. Go to __Users & Group > Current User > Login Items__ add the folowing applications: *TickTick*, *1Password 7*, *Focus*, *CheatSheet* and *Timemator*
+11. Go to __Keyboard__ and change the following:
+  - 
+7. Go to [iTerm 2 Color Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes) or [macOS Terminal Color Schemes](https://github.com/lysyi3m/macos-terminal-themes) and choose your terminal color theme. We are currently using `AtelierSulphurpool`. Install in your terminal application(s) and make it the default theme.
+8. Set up your Dock and Finder Sidebar ordering
+9. Install potential VPN configurations
+10. Go through __System Preferences__ and configure as wished
+11. Restart macOS
 
 ## Applications
 
@@ -51,10 +62,3 @@ These applications were previously used but deemed unnecessary:
 - [Sitesucker](https://ricks-apps.com/osx/sitesucker/index.html)
 - [Frida](https://frida.re/)
 - [StarUML](https://staruml.io/): find replacement
-
-## Missing steps
-
-- VPN Configuration
-- Dock Setup (e.g. Dock items)
-- Finder Setup (e.g. Sidebar items)
-- Terminal Theme(s): currently using __AtelierSulphurpool__
