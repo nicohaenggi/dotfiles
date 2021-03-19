@@ -49,6 +49,8 @@ cask "robo-3t"
 cask "garmin-express"
 cask "android-platform-tools"
 cask "tableplus"
+cask "iterm2"
+cask "rectangle"
 
 # fonts
 cask "font-fantasque-sans-mono"
