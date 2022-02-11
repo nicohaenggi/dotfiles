@@ -14,6 +14,7 @@ brew "yarn"
 brew "jq"
 brew "fswatch"
 brew "skaffold"
+brew "llvm"
 
 # brew apps
 cask "1password"
@@ -51,6 +52,7 @@ cask "iterm2"
 cask "rectangle"
 cask "syncthing"
 cask "signal"
+brew "linear"
 
 # fonts
 cask "font-fantasque-sans-mono"
